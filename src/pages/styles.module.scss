@@ -1,13 +1,15 @@
-.light-theme {
-  @import "../styles/theme/light.scss";
-}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  grid-gap: 20px;
+  gap: 20px;
+  height: 100vh;
 
-.dark-theme {
-  @import "../styles/theme/dark.scss";
+  h1 {
+    flex-grow: 1;
+  }
 }
-
-.light-theme,
-.dark-theme {
-    background: var(--background-color);
-}
-

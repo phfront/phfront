@@ -1,3 +1,10 @@
+:root {
+  --background: #222;
+  --color: #eee;
+
+  --primary: #1ad743;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,5 +13,7 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
-@import "./theme/dark.scss";
-@import "./theme/light.scss";
+body {
+  background: var(--background);
+  color: var(--color);
+}
