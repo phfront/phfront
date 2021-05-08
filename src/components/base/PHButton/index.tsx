@@ -4,13 +4,15 @@ export type PHButtonTypeProps = "primary" | "primary-outline";
 
 export type PHButtonProps = {
   type: PHButtonTypeProps;
-  label: string;
+  label?: string;
+  icon?: string;
   click: () => any;
 };
 
-export default function PHButton({ type, label, click }: PHButtonProps) {
+export default function PHButton({ type, label, icon, click }: PHButtonProps) {
   return (
     <button className={`${styles[type]} ${styles.button}`} onClick={click}>
+      {icon && <i className={icon}></i>}
       {label}
     </button>
   );
