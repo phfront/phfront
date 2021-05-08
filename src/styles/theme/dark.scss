@@ -1,0 +1,14 @@
+[data-theme="dark"] {
+  $bgColor: #222;
+  $color: #ddd;
+
+  body {
+    background: $bgColor;
+  }
+  
+  * {
+    color: $color;
+  }
+}
+
+

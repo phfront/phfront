@@ -1,0 +1,13 @@
+.light-theme {
+  @import "../styles/theme/light.scss";
+}
+
+.dark-theme {
+  @import "../styles/theme/dark.scss";
+}
+
+.light-theme,
+.dark-theme {
+    background: var(--background-color);
+}
+
