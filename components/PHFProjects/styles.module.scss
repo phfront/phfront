@@ -10,6 +10,8 @@
 .title {
   font-size: 1.8rem;
   margin: 0.5rem 0;
+  transform: scale(0);
+  animation: show 0.2s 0.7s forwards;
 }
 
 .project {
@@ -17,6 +19,8 @@
   flex-direction: row;
   align-items: center;
   margin: 0.5rem 0;
+  transform: scale(0);
+  animation: show 0.2s 0.75s forwards;
 
   i {
     font-size: 3.13rem;
@@ -36,5 +40,14 @@
       margin-right: 0rem;
       margin-left: 1rem;
     }
+  }
+}
+
+@keyframes show {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }

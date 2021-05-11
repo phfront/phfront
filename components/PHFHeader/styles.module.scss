@@ -17,7 +17,9 @@
 
 .avatarContainer {
   position: relative;
-  
+  transform: scale(0);
+  animation: show 0.2s 0s forwards;
+
   .avatar {
     width: 109px;
     height: 109px;
@@ -47,11 +49,15 @@
   color: var(--content-1);
   font-size: 2rem;
   margin-top: 1rem;
+  transform: scale(0);
+  animation: show 0.2s 0.05s forwards;
 }
 
 .subtitle {
   color: var(--content-1);
   font-size: 1.5rem;
+  transform: scale(0);
+  animation: show 0.2s 0.05s forwards;
 }
 
 .social {
@@ -70,5 +76,35 @@
     &:active {
       transform: scale(1.2);
     }
+  }
+}
+
+.facebook {
+  transform: scale(0);
+  animation: show 0.2s 0.1s forwards;
+}
+.whatsapp {
+  transform: scale(0);
+  animation: show 0.2s 0.15s forwards;
+}
+.instagram {
+  transform: scale(0);
+  animation: show 0.2s 0.2s forwards;
+}
+.linkedin {
+  transform: scale(0);
+  animation: show 0.2s 0.25s forwards;
+}
+.github {
+  transform: scale(0);
+  animation: show 0.2s 0.3s forwards;
+}
+
+@keyframes show {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }

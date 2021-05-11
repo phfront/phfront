@@ -8,6 +8,8 @@
 
 .title {
   font-size: 2rem;
+  transform: scale(0);
+  animation: show 0.2s 0.35s forwards;
 }
 
 .skills {
@@ -18,6 +20,31 @@
 
   i {
     font-size: 2.5rem;
+
+    &:nth-child(1) {
+      transform: scale(0);
+      animation: show 0.2s 0.4s forwards;
+    }
+
+    &:nth-child(2) {
+      transform: scale(0);
+      animation: show 0.2s 0.45s forwards;
+    }
+
+    &:nth-child(3) {
+      transform: scale(0);
+      animation: show 0.2s 0.5s forwards;
+    }
+
+    &:nth-child(4) {
+      transform: scale(0);
+      animation: show 0.2s 0.55s forwards;
+    }
+
+    &:nth-child(5) {
+      transform: scale(0);
+      animation: show 0.2s 0.6s forwards;
+    }
   }
 }
 
@@ -25,8 +52,19 @@
   font-size: 2rem;
   user-select: none;
   cursor: pointer;
+  transform: scale(0);
+  animation: show 0.2s 0.65s forwards;
 
   &:active {
     transform: scale(1.2);
+  }
+}
+
+@keyframes show {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
