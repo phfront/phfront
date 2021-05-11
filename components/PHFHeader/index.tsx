@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import Link from "next/link";
 
 export default function PHFHeader() {
   return (
@@ -11,11 +12,31 @@ export default function PHFHeader() {
         <h1 className={styles.title}>PEDRO HENRIQUE</h1>
         <h2 className={styles.subtitle}>Front-end Developer</h2>
         <div className={styles.social}>
-          <i className="fab fa-facebook-f" />
-          <i className="fab fa-whatsapp" />
-          <i className="fab fa-instagram" />
-          <i className="fab fa-linkedin-in" />
-          <i className="fab fa-github" />
+          <Link href="https://www.facebook.com/le.pedro.derp">
+            <a target="_blank">
+              <i className="fab fa-facebook-f" />
+            </a>
+          </Link>
+          <Link href="https://wa.me/554891691208">
+            <a target="_blank">
+              <i className="fab fa-whatsapp" />
+            </a>
+          </Link>
+          <Link href="https://www.instagram.com/pedro_atem/">
+            <a target="_blank">
+              <i className="fab fa-instagram" />
+            </a>
+          </Link>
+          <Link href="https://www.linkedin.com/in/pedro-henrique-silva-rosa-94aa7a67/">
+            <a target="_blank">
+              <i className="fab fa-linkedin-in" />
+            </a>
+          </Link>
+          <Link href="https://github.com/phfront">
+            <a target="_blank">
+              <i className="fab fa-github" />
+            </a>
+          </Link>
         </div>
       </div>
     </div>
