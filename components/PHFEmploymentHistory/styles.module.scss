@@ -1,2 +1,66 @@
 .container {
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.logo {
+  width: auto;
+  height: 80px;
+}
+
+.position {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem 0 0.5rem;
+
+  p {
+    font-size: 2rem;
+  }
+
+  span {
+    font-size: 1.2rem;
+  }
+}
+
+.more {
+  font-size: 2rem;
+  user-select: none;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(1.2);
+  }
+}
+
+.square {
+  display: flex;
+
+  div {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 0.2rem;
+    border: 0.13rem solid var(--content-2);
+    cursor: pointer;
+    user-select: none;
+
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.squareActive {
+  background: var(--content-2);
 }

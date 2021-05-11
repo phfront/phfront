@@ -1,3 +1,5 @@
+import PHFEducation from "../components/PHFEducation";
+import PHFEmploymentHistory from "../components/PHFEmploymentHistory";
 import PHFHeader from "../components/PHFHeader";
 import PHFProjects from "../components/PHFProjects";
 import PHFSkills from "../components/PHFSkills";
@@ -10,6 +12,8 @@ function Home() {
         <PHFHeader />
         <PHFSkills />
         <PHFProjects />
+        <PHFEmploymentHistory />
+        <PHFEducation />
       </section>
     </div>
   );
