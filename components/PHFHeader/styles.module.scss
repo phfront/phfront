@@ -1,0 +1,74 @@
+.container {
+  height: 403px;
+  background-image: url("/img/pedro_bg_blur.png");
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 403px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding-top: 50px;
+}
+
+.avatarContainer {
+  position: relative;
+  
+  .avatar {
+    width: 109px;
+    height: 109px;
+    background-image: url("/img/pedro3.jpeg");
+    background-size: cover;
+    border-radius: 100%;
+  }
+
+  i {
+    position: absolute;
+    font-size: 1.3rem;
+    color: var(--content-1);
+    bottom: 5px;
+    right: 0;
+    background: var(--content-3);
+    border-radius: 100%;
+    user-select: none;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.title {
+  color: var(--content-1);
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.subtitle {
+  color: var(--content-1);
+  font-size: 1.5rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-grow: 1;
+
+  i {
+    color: var(--content-1);
+    font-size: 2rem;
+    user-select: none;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+}

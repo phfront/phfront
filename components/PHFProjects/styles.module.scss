@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--content-1);
+  background: var(--content-2);
+  padding: 2rem 1.3rem;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+
+  i {
+    font-size: 3.13rem;
+  }
+
+  div {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}

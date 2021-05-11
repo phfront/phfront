@@ -1,0 +1,18 @@
+:root {
+  --content-1: #D8E3D8;
+  --content-2: #006437;
+  --content-3: #656464;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: var(--content-1);
+  color: var(--content-2);
+}
