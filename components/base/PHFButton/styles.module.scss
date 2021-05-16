@@ -1,0 +1,12 @@
+.button  {
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+}
+
+.type4 {
+    &.outline {
+        color: var(--content-4);
+        border: 2px solid;
+        background: transparent;
+    }
+}

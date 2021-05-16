@@ -2,3 +2,27 @@
   display: flex;
   flex-direction: column;
 }
+
+.mobile {
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+}
+
+.desktop {
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.webContainer {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+}
+
+.webContainerCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}

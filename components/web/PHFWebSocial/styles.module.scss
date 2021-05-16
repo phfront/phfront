@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  i {
+    color: var(--content-4);
+    font-size: 5rem;
+    margin: 1rem 0;
+    user-select: none;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(1.2);
+    }
+  }
+}
