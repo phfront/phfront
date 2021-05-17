@@ -1,43 +1,34 @@
-import Flickity from 'react-flickity-component';
-import styles from './styles.module.scss';
+import { format, parseISO } from "date-fns";
+import { useContext } from "react";
+import Flickity from "react-flickity-component";
+import { DataContext } from "../../../context/data";
+import styles from "./styles.module.scss";
 
 export default function PHFWebEmploymentHistory() {
+  const { data } = useContext(DataContext);
+
+  const formatEnd = (endDate: string) => endDate ? format(parseISO(endDate), "LLL y") : 'Current';
+
   function Companies() {
     return (
       <Flickity
         options={{
-          autoPlay: false,
+          autoPlay: true,
           prevNextButtons: false,
           resize: true,
         }}
       >
-        <div className={styles.company}>
-          <img className={styles.logo} src="/svg/qintess-web.svg" />
-          <div className={styles.position}>
-            <p>Qintess</p>
-            <span>Senior Front-end</span>
-            <span>Nov 2019 - Current</span>
+        {data.employment_history.map((company, index) => (
+          <div className={styles.company} key={index}>
+            <img className={styles.logo} src={company.logo_web} />
+            <div className={styles.position}>
+              <p>{company.name}</p>
+              <span>{company.headline}</span>
+              <span>{format(parseISO(company.start), "LLL y")} - {formatEnd(company.end)}</span>
+            </div>
+            <i className={`${styles.more} fas fa-ellipsis-h`} />
           </div>
-          <i className={`${styles.more} fas fa-ellipsis-h`} />
-        </div>
-        <div className={styles.company}>
-          <img className={styles.logo} src="/svg/qintess-web.svg" />
-          <div className={styles.position}>
-            <p>Qintess</p>
-            <span>Senior Front-end</span>
-            <span>Nov 2019 - Current</span>
-          </div>
-          <i className={`${styles.more} fas fa-ellipsis-h`} />
-        </div>
-        <div className={styles.company}>
-          <img className={styles.logo} src="/svg/qintess-web.svg" />
-          <div className={styles.position}>
-            <p>Qintess</p>
-            <span>Senior Front-end</span>
-            <span>Nov 2019 - Current</span>
-          </div>
-          <i className={`${styles.more} fas fa-ellipsis-h`} />
-        </div>
+        ))}
       </Flickity>
     );
   }

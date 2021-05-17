@@ -1,13 +1,20 @@
 import styles from "./styles.module.scss";
 import Link from "next/link";
+import { useContext } from "react";
+import { DataContext } from "../../../context/data";
+import { format, parseISO, differenceInYears } from "date-fns";
 
 export default function PHFWebPersonalInfo() {
+  const { data } = useContext(DataContext);
   return (
     <div className={styles.container}>
-      <p>25 anos</p>
-      <p>April 15, 1996</p>
-      <p>pedro.phdois@gmail.com</p>
-      <p>(48) 991691208</p>
+      <p>{`${differenceInYears(
+        new Date(),
+        parseISO(data.detail.birthdate)
+      )} years`}</p>
+      <p>{format(parseISO(data.detail.birthdate), "LLLL d, y")}</p>
+      <p>{data.detail.email}</p>
+      <p>{data.detail.phone}</p>
     </div>
   );
 }
