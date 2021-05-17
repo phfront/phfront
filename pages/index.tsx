@@ -27,17 +27,31 @@ function Home() {
         <PHFWebContainer>
           <div className={styles.webContainer}>
             <div className={styles.webContainerCol}>
-              <PHFWebName />
-              <PHFWebPersonalInfo />
-              <PHFWebSkills />
+              <div className={styles.webItem1}>
+                <PHFWebName />
+              </div>
+              <div className={styles.webItem2}>
+                <PHFWebPersonalInfo />
+              </div>
+              <div className={styles.webItem3}>
+                <PHFWebSkills />
+              </div>
             </div>
             <div className={styles.webContainerCol}>
-              <PHFWebEmploymentHistory />
-              <PHFWebFormation />
-              <PHFWebPersonalProjects />
+              <div className={styles.webItem4}>
+                <PHFWebEmploymentHistory />
+              </div>
+              <div className={styles.webItem5}>
+                <PHFWebFormation />
+              </div>
+              <div className={styles.webItem6}>
+                <PHFWebPersonalProjects />
+              </div>
             </div>
             <div className={styles.webContainerCol}>
-              <PHFWebSocial />
+              <div className={styles.webItem7}>
+                <PHFWebSocial />
+              </div>
             </div>
           </div>
         </PHFWebContainer>

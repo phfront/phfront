@@ -1,17 +1,77 @@
-.social {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  i {
+.title {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: var(--content-4);
+}
+
+.companies {
+  width: 350px;
+}
+
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  max-width: 350px;
+}
+
+.logo {
+  width: auto;
+  height: 80px;
+}
+
+.position {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem 0 0.5rem;
+
+  p {
+    font-size: 2rem;
     color: var(--content-4);
-    font-size: 5rem;
-    margin: 1rem 0;
-    user-select: none;
+  }
+
+  span {
+    font-size: 1.2rem;
+    color: var(--content-4);
+  }
+}
+
+.more {
+  font-size: 2rem;
+  user-select: none;
+  cursor: pointer;
+  color: var(--content-4);
+
+  &:active {
+    transform: scale(1.2);
+  }
+}
+
+.square {
+  display: flex;
+
+  div {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 0.2rem;
+    border: 0.13rem solid var(--content-4);
     cursor: pointer;
+    user-select: none;
 
     &:active {
       transform: scale(1.2);
     }
   }
+}
+
+.squareActive {
+  background: var(--content-4);
 }

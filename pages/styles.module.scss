@@ -18,6 +18,10 @@
 .webContainer {
   display: grid;
   grid-template-columns: repeat(3, calc(100% / 3));
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 40% 40% 20%;
+  }
 }
 
 .webContainerCol {
@@ -25,4 +29,48 @@
   flex-direction: column;
   justify-content: space-evenly;
   height: 100vh;
+}
+
+.webItem1 {
+  transform: translateX(-1000px);
+  animation: show 0.2s 0.01s forwards;
+}
+
+.webItem2 {
+  transform: translateX(-1000px);
+  animation: show 0.2s 0.02s forwards;
+}
+
+.webItem3 {
+  transform: translateX(-1000px);
+  animation: show 0.2s 0.03s forwards;
+}
+
+.webItem4 {
+  transform: translateX(-1000px);
+  animation: show 0.2s 0.04s forwards;
+}
+
+.webItem5 {
+  transform: translateX(-1000px);
+  animation: show 0.2s 0.05s forwards;
+}
+
+.webItem6 {
+  transform: translateX(-1000px);
+  animation: show 0.2s 0.06s forwards;
+}
+
+.webItem7 {
+  transform: translateX(-1000px);
+  animation: show 0.2s 0.07s forwards;
+}
+
+@keyframes show {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }

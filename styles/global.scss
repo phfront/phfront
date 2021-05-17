@@ -31,8 +31,17 @@ body {
   background: transparent !important;
   opacity: 1 !important;
   border-radius: 0px !important;
+
+  @media screen and (min-width: 800px) {
+    border: 0.2rem solid var(--content-4);
+  }
 }
 
 .flickity-page-dots .dot.is-selected {
   background: var(--content-2) !important;
+
+  @media screen and (min-width: 800px) {
+    border: 0.2rem solid var(--content-4);
+    background: var(--content-4) !important;
+  }
 }
