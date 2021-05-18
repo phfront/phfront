@@ -1,97 +1,115 @@
 {
-    "name": "PEDRO HENRIQUE",
-    "headline": "Front-end Developer",
-    "detail": {
-        "birthdate": "1996-04-15",
-        "email": "pedro.phdois@gmail.com",
-        "phone": "48991691208"
-    },
-    "skills": {
-        "main": [
-            "fab fa-html5",
-            "fab fa-js",
-            "fab fa-css3-alt",
-            "fab fa-angular",
-            "fab fa-react"
-        ]
-    },
-    "employment_history": [
-        {
-            "name": "Qintess",
-            "headline": "Senior Front-end",
-            "logo_web": "/svg/qintess-web.svg",
-            "logo": "/svg/qintess.svg",
-            "start": "2020-11-01",
-            "end": null
-        },
-        {
-            "name": "Seventh",
-            "headline": "Front-end",
-            "logo_web": "/svg/seventh-web.svg",
-            "logo": "/svg/seventh.svg",
-            "start": "2020-04-01",
-            "end": "2020-11-01"
-        },
-        {
-            "name": "Agrosatélite",
-            "headline": "Junior Front-end",
-            "logo_web": "/img/agrosatelite-web.png",
-            "logo": "/img/agrosatelite.png",
-            "start": "2018-07-01",
-            "end": "2019-03-01"
-        },
-        {
-            "name": "FlipFlopLab",
-            "headline": "Fullstack Developer",
-            "logo_web": "/img/flipfloplab-web.png",
-            "logo": "/img/flipfloplab.png",
-            "start": "2017-03-01",
-            "end": "2018-07-01"
-        },
-        {
-            "name": "Urbemobile",
-            "headline": "Fullstack Developer",
-            "logo_web": "/img/urbemobile-web.png",
-            "logo": "/img/urbemobile.png",
-            "start": "2014-04-01",
-            "end": "2017-03-01"
-        }
-    ],
-    "formation": [
-        {
-            "institution": "Fatec SJC",
-            "course": "System Analysis and Development",
-            "start": "2014-01-01",
-            "end": "2017-01-01"
-        },
-        {
-            "institution": "Ecompo",
-            "course": "Information Technology Technician",
-            "start": "2011-01-01",
-            "end": "2013-12-01"
-        }
-    ],
-    "social": {
-        "web": [
-            { "url": "https://www.facebook.com/le.pedro.derp", "icon": "fab fa-facebook-square"},
-            { "url": "https://wa.me/554891691208", "icon": "fab fa-whatsapp-square"},
-            { "url": "https://www.instagram.com/pedro_atem/", "icon": "fab fa-instagram-square"},
-            { "url": "https://www.linkedin.com/in/pedro-henrique-silva-rosa-94aa7a67/", "icon": "fab fa-linkedin"},
-            { "url": "https://github.com/phfront", "icon": "fab fa-github-square"}
-        ],
-        "mobile": [
-            { "url": "https://www.facebook.com/le.pedro.derp", "icon": "fab fa-facebook-f"},
-            { "url": "https://wa.me/554891691208", "icon": "fab fa-whatsapp"},
-            { "url": "https://www.instagram.com/pedro_atem/", "icon": "fab fa-instagram"},
-            { "url": "https://www.linkedin.com/in/pedro-henrique-silva-rosa-94aa7a67/", "icon": "fab fa-linkedin-in"},
-            { "url": "https://github.com/phfront", "icon": "fab fa-github"}
-        ]
-    },
-    "personal_projects": [
-        {
-            "name": "Atemsfy",
-            "icon": "fab fa-spotify",
-            "description": "Gerencia suas playlists do Spotify de uma maneira mais fácil e prática"
-        }
+  "name": "PEDRO HENRIQUE",
+  "headline": "FRONT_END_DEVELOPER",
+  "detail": {
+    "birthdate": "1996-04-15",
+    "email": "pedro.phdois@gmail.com",
+    "phone": "48991691208"
+  },
+  "skills": {
+    "main": [
+      "fab fa-html5",
+      "fab fa-js",
+      "fab fa-css3-alt",
+      "fab fa-angular",
+      "fab fa-react"
     ]
+  },
+  "employment_history": [
+    {
+      "name": "Qintess",
+      "headline": "SENIOR_FRONT_END",
+      "logo_web": "/svg/qintess-web.svg",
+      "logo": "/svg/qintess.svg",
+      "start": "2020-11-01",
+      "end": null
+    },
+    {
+      "name": "Seventh",
+      "headline": "PLAIN_FRONT_END",
+      "logo_web": "/svg/seventh-web.svg",
+      "logo": "/svg/seventh.svg",
+      "start": "2020-04-01",
+      "end": "2020-11-01"
+    },
+    {
+      "name": "Agrosatélite",
+      "headline": "JUNIOR_FRONT_END",
+      "logo_web": "/img/agrosatelite-web.png",
+      "logo": "/img/agrosatelite.png",
+      "start": "2018-07-01",
+      "end": "2019-03-01"
+    },
+    {
+      "name": "FlipFlopLab",
+      "headline": "FULLSTACK_DEVELOPER",
+      "logo_web": "/img/flipfloplab-web.png",
+      "logo": "/img/flipfloplab.png",
+      "start": "2017-03-01",
+      "end": "2018-07-01"
+    },
+    {
+      "name": "Urbemobile",
+      "headline": "FULLSTACK_DEVELOPER",
+      "logo_web": "/img/urbemobile-web.png",
+      "logo": "/img/urbemobile.png",
+      "start": "2014-04-01",
+      "end": "2017-03-01"
+    }
+  ],
+  "formation": [
+    {
+      "institution": "Fatec SJC",
+      "course": "SYSTEM_ANALYSIS_DEVELOPMENT",
+      "start": "2014-01-01",
+      "end": "2017-01-01"
+    },
+    {
+      "institution": "Ecompo",
+      "course": "INFORMATION_TECHNOLOGY_TECHNICIAN",
+      "start": "2011-01-01",
+      "end": "2013-12-01"
+    }
+  ],
+  "social": {
+    "web": [
+      {
+        "url": "https://www.facebook.com/le.pedro.derp",
+        "icon": "fab fa-facebook-square"
+      },
+      { "url": "https://wa.me/554891691208", "icon": "fab fa-whatsapp-square" },
+      {
+        "url": "https://www.instagram.com/pedro_atem/",
+        "icon": "fab fa-instagram-square"
+      },
+      {
+        "url": "https://www.linkedin.com/in/pedro-henrique-silva-rosa-94aa7a67/",
+        "icon": "fab fa-linkedin"
+      },
+      { "url": "https://github.com/phfront", "icon": "fab fa-github-square" }
+    ],
+    "mobile": [
+      {
+        "url": "https://www.facebook.com/le.pedro.derp",
+        "icon": "fab fa-facebook-f"
+      },
+      { "url": "https://wa.me/554891691208", "icon": "fab fa-whatsapp" },
+      {
+        "url": "https://www.instagram.com/pedro_atem/",
+        "icon": "fab fa-instagram"
+      },
+      {
+        "url": "https://www.linkedin.com/in/pedro-henrique-silva-rosa-94aa7a67/",
+        "icon": "fab fa-linkedin-in"
+      },
+      { "url": "https://github.com/phfront", "icon": "fab fa-github" }
+    ]
+  },
+  "personal_projects": [
+    {
+      "name": "Atemsfy",
+      "icon": "fab fa-spotify",
+      "description": "ATEMSFY_DESCRIPTION"
+    }
+  ]
 }

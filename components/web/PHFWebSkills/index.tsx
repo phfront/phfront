@@ -2,9 +2,11 @@ import styles from "./styles.module.scss";
 import PHFButton from "../../base/PHFButton";
 import { useContext } from "react";
 import { DataContext } from "../../../context/data";
+import { I18nContext } from "../../../context/i18n";
 
 export default function PHFWebSkills() {
   const { data } = useContext(DataContext);
+  const { getText } = useContext(I18nContext);
 
   function chunk(arr, chunkSize) {
     const res = [];
@@ -17,7 +19,7 @@ export default function PHFWebSkills() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>SKILLS</h1>
+      <h1 className={styles.title}>{getText("SKILLS")}</h1>
       {chunk(data.skills.main, 3).map((chunk, index) => (
         <div key={index} className={styles.skills}>
           {
@@ -29,7 +31,7 @@ export default function PHFWebSkills() {
       ))}
       <div className={styles.more}>
         <PHFButton
-          label="See more"
+          label={getText("SEE_MORE")}
           type="type4"
           variation="outline"
           click={() => {}}

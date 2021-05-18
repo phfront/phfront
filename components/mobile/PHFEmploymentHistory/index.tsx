@@ -6,11 +6,15 @@ import { useContext } from "react";
 import { DataContext } from "../../../context/data";
 import { format } from "date-fns";
 import parseISO from "date-fns/parseISO";
+import { I18nContext } from "../../../context/i18n";
+import { formatDate } from "../../../shared/formatDate";
 
 export default function PHFEmploymentHistory() {
   const { data } = useContext(DataContext);
+  const { getText, lang } = useContext(I18nContext);
 
-  const formatEnd = (endDate: string) => endDate ? format(parseISO(endDate), "LLL y") : 'Current';
+  const formatEnd = (endDate: string) =>
+    endDate ? formatDate(endDate, lang, "LLL y") : getText("CURRENT");
 
   function Companies() {
     return (
@@ -21,26 +25,27 @@ export default function PHFEmploymentHistory() {
           resize: true,
         }}
       >
-        {
-          data.employment_history.map((company, index) => (
-            <div className={styles.company}>
-              <img className={styles.logo} src={company.logo} />
-              <div className={styles.position}>
-                <p>{company.name}</p>
-                <span>{company.headline}</span>
-                <span>{format(parseISO(company.start), "LLL y")} - {formatEnd(company.end)}</span>
-              </div>
-              <i className={`${styles.more} fas fa-ellipsis-h`} />
+        {data.employment_history.map((company, index) => (
+          <div className={styles.company} key={index}>
+            <img className={styles.logo} src={company.logo} />
+            <div className={styles.position}>
+              <p>{company.name}</p>
+              <span>{getText(company.headline)}</span>
+              <span>
+                {formatDate(company.start, lang, "LLL y")} -{" "}
+                {formatEnd(company.end)}
+              </span>
             </div>
-          ))
-        }
+            <i className={`${styles.more} fas fa-ellipsis-h`} />
+          </div>
+        ))}
       </Flickity>
     );
   }
 
   return (
     <div className={styles.container}>
-      <LineTitle label="Employment History" />
+      <LineTitle label={getText("EMPLOYMENT_HISTORY")} />
       <Companies />
     </div>
   );

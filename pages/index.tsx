@@ -15,55 +15,60 @@ import styles from "./styles.module.scss";
 import data from "./phfront.data.json";
 import { IData } from "../model/data";
 import { DataContext } from "../context/data";
+import { I18nContextProvider } from "../context/i18n";
+import PHFLangs from "../components/base/PHFLangs";
 
 type HomeProps = { data: IData };
 
 function Home({ data }: HomeProps) {
   return (
-    <DataContext.Provider value={{ data }}>
-      <div className={styles.container}>
-        <section className={styles.mobile}>
-          <PHFHeader />
-          <PHFSkills />
-          <PHFProjects />
-          <PHFEmploymentHistory />
-          <PHFEducation />
-        </section>
-        <section className={styles.desktop}>
-          <PHFWebContainer>
-            <div className={styles.webContainer}>
-              <div className={styles.webContainerCol}>
-                <div className={styles.webItem1}>
-                  <PHFWebName />
+    <I18nContextProvider>
+      <DataContext.Provider value={{ data }}>
+        <PHFLangs />
+        <div className={styles.container}>
+          <section className={styles.mobile}>
+            <PHFHeader />
+            <PHFSkills />
+            <PHFProjects />
+            <PHFEmploymentHistory />
+            <PHFEducation />
+          </section>
+          <section className={styles.desktop}>
+            <PHFWebContainer>
+              <div className={styles.webContainer}>
+                <div className={styles.webContainerCol}>
+                  <div className={styles.webItem1}>
+                    <PHFWebName />
+                  </div>
+                  <div className={styles.webItem2}>
+                    <PHFWebPersonalInfo />
+                  </div>
+                  <div className={styles.webItem3}>
+                    <PHFWebSkills />
+                  </div>
                 </div>
-                <div className={styles.webItem2}>
-                  <PHFWebPersonalInfo />
+                <div className={styles.webContainerCol}>
+                  <div className={styles.webItem4}>
+                    <PHFWebEmploymentHistory />
+                  </div>
+                  <div className={styles.webItem5}>
+                    <PHFWebFormation />
+                  </div>
+                  <div className={styles.webItem6}>
+                    <PHFWebPersonalProjects />
+                  </div>
                 </div>
-                <div className={styles.webItem3}>
-                  <PHFWebSkills />
+                <div className={styles.webContainerCol}>
+                  <div className={styles.webItem7}>
+                    <PHFWebSocial />
+                  </div>
                 </div>
               </div>
-              <div className={styles.webContainerCol}>
-                <div className={styles.webItem4}>
-                  <PHFWebEmploymentHistory />
-                </div>
-                <div className={styles.webItem5}>
-                  <PHFWebFormation />
-                </div>
-                <div className={styles.webItem6}>
-                  <PHFWebPersonalProjects />
-                </div>
-              </div>
-              <div className={styles.webContainerCol}>
-                <div className={styles.webItem7}>
-                  <PHFWebSocial />
-                </div>
-              </div>
-            </div>
-          </PHFWebContainer>
-        </section>
-      </div>
-    </DataContext.Provider>
+            </PHFWebContainer>
+          </section>
+        </div>
+      </DataContext.Provider>
+    </I18nContextProvider>
   );
 }
 

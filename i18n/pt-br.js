@@ -1,0 +1,17 @@
+export const pt_br = {
+    "FRONT_END_DEVELOPER": "Desenvolvedor Front-end",
+    "SENIOR_FRONT_END": "Sênior Front-end",
+    "PLAIN_FRONT_END": "Front-end",
+    "JUNIOR_FRONT_END": "Júnior Front-end",
+    "FULLSTACK_DEVELOPER": "Fullstack Developer",
+    "SYSTEM_ANALYSIS_DEVELOPMENT": "Análise e Desenvolvimento de Sistemas",
+    "INFORMATION_TECHNOLOGY_TECHNICIAN": "Técnico em Técnologia de informação",
+    "ATEMSFY_DESCRIPTION": "Gerencia suas playlists do Spotify de uma maneira mais fácil e prática",
+    "YEARS": "anos",
+    "SEE_MORE": "Veja mais",
+    "EMPLOYMENT_HISTORY": "Experiência Profissional",
+    "CURRENT": "Atual",
+    "FORMATION": "Formação",
+    "PERSONAL_PROJECTS": "Projetos Pessais",
+    "SKILLS": "Conhecimentos",
+}

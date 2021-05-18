@@ -1,0 +1,50 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+
+  @media screen and (max-width: 800px) {
+    position: absolute;
+  }
+}
+
+.lang {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.selectLang {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+
+  @media screen and (max-width: 800px) {
+    background: var(--content-1);
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+
+    span {
+      margin-right: 10px;
+      font-weight: bold;
+      color: var(--content-4);
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+}

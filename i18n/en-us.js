@@ -1,0 +1,17 @@
+export const en_us = {
+    "FRONT_END_DEVELOPER": "Front-end Developer",
+    "SENIOR_FRONT_END": "Senior Front-end",
+    "PLAIN_FRONT_END": "Front-end",
+    "JUNIOR_FRONT_END": "Junior Front-end",
+    "FULLSTACK_DEVELOPER": "Fullstack Developer",
+    "SYSTEM_ANALYSIS_DEVELOPMENT": "System Analysis and Development",
+    "INFORMATION_TECHNOLOGY_TECHNICIAN": "Information Technology Technician",
+    "ATEMSFY_DESCRIPTION": "Manage your Spotify playlists in an easier and more practical way",
+    "YEARS": "years",
+    "SEE_MORE": "See more",
+    "EMPLOYMENT_HISTORY": "Employment History",
+    "CURRENT": "Current",
+    "FORMATION": "Formation",
+    "PERSONAL_PROJECTS": "Personal Projects",
+    "SKILLS": "Skills",
+};
