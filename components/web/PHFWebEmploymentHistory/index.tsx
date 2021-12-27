@@ -33,7 +33,7 @@ export default function PHFWebEmploymentHistory() {
                 {formatEnd(company.end)}
               </span>
             </div>
-            <i className={`${styles.more} fas fa-ellipsis-h`} />
+            {/* <i className={`${styles.more} fas fa-ellipsis-h`} /> */}
           </div>
         ))}
       </Flickity>

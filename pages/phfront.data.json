@@ -17,12 +17,20 @@
   },
   "employment_history": [
     {
+      "name": "NTT Data",
+      "headline": "SENIOR_FRONT_END",
+      "logo_web": "/svg/ntt-data-web.svg",
+      "logo": "/svg/ntt-data.svg",
+      "start": "2021-07-01",
+      "end": null
+    },
+    {
       "name": "Qintess",
       "headline": "SENIOR_FRONT_END",
       "logo_web": "/svg/qintess-web.svg",
       "logo": "/svg/qintess.svg",
       "start": "2020-11-01",
-      "end": null
+      "end": "2021-06-01"
     },
     {
       "name": "Seventh",

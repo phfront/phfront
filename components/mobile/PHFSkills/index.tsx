@@ -17,7 +17,7 @@ export default function PHFSkills() {
           ))
         }
       </div>
-      <i className={`${styles.more} fas fa-ellipsis-h`} />
+      {/* <i className={`${styles.more} fas fa-ellipsis-h`} /> */}
     </div>
   );
 }

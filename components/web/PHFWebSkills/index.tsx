@@ -29,14 +29,14 @@ export default function PHFWebSkills() {
           }
         </div>
       ))}
-      <div className={styles.more}>
+      {/* <div className={styles.more}>
         <PHFButton
           label={getText("SEE_MORE")}
           type="type4"
           variation="outline"
           click={() => {}}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

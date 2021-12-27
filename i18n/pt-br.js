@@ -12,6 +12,6 @@ export const pt_br = {
     "EMPLOYMENT_HISTORY": "Experiência Profissional",
     "CURRENT": "Atual",
     "FORMATION": "Formação",
-    "PERSONAL_PROJECTS": "Projetos Pessais",
+    "PERSONAL_PROJECTS": "Projetos Pessoais",
     "SKILLS": "Conhecimentos",
 }

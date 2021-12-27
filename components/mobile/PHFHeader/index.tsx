@@ -13,7 +13,7 @@ export default function PHFHeader() {
       <div className={styles.content}>
         <div className={styles.avatarContainer}>
           <div className={styles.avatar} />
-          <i className="fas fa-user-circle" />
+          {/* <i className="fas fa-user-circle" /> */}
         </div>
         <h1 className={styles.title}>{data.name}</h1>
         <h2 className={styles.subtitle}>{getText(data.headline)}</h2>
